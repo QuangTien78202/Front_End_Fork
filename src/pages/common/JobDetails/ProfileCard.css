@@ -1,0 +1,82 @@
+.user-profile-card {
+  width: 300px;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profile-details p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.apply-button {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.notification-text {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subscribe-button {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.chat-help {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.chat-button {
+  background-color: #00bfa5;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.icon-chat {
+  margin-right: 5px;
+}

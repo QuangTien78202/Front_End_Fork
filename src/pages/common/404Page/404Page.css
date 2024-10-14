@@ -1,0 +1,40 @@
+.page-404 {
+  text-align: center;
+  padding: 50px;
+}
+
+.page-404 h1 {
+  font-size: 100px;
+  color: #333;
+}
+
+.page-404 p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #666;
+}
+
+.page-404 .search-container {
+  margin: 20px 0;
+}
+
+.page-404 .search-container input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.page-404 .back-home {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.page-404 .back-home:hover {
+  background-color: #218838;
+}

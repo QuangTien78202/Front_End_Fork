@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.support {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.support-text {
+  color: #16a870;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.language-selector {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.language-selector:hover {
+  color: #16a870;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  margin-left: 15px;
+}
+
+.header-logo .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #16a870;
+  font-family: "Courier New", Courier, monospace; /* Tùy chỉnh font chữ */
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.search-input {
+  width: 300px;
+  margin-left: 10px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.header-actions .login-button {
+  margin-left: 20px;
+  background-color: #16a870;
+  border-color: #16a870;
+}
+
+.header-actions .login-button:hover {
+  background-color: #138a64;
+  border-color: #138a64;
+}
+
+/* Responsive: Điều chỉnh kích thước văn bản và khoảng cách cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .benefit-card {
+    flex-direction: column; /* Khi màn hình nhỏ, icon sẽ nằm trên văn bản */
+    height: auto; /* Tự điều chỉnh chiều cao */
+    padding: 15px; /* Điều chỉnh padding cho phù hợp */
+  }
+
+  .benefit-icon {
+    margin-right: 0;
+    margin-bottom: 10px; /* Thêm khoảng cách giữa icon và văn bản khi icon nằm trên */
+  }
+
+  .benefit-title {
+    font-size: 14px; /* Giảm kích thước văn bản trên màn hình nhỏ */
+  }
+}
+
+.job-title {
+  cursor: pointer; /* Thêm con trỏ chỉ tay khi hover */
+  color: black; /* Màu mặc định */
+}
+
+.job-title:hover {
+  color: #16a870; /* Màu khi hover */
+}
