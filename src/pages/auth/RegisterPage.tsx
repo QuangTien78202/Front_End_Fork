@@ -9,9 +9,9 @@ import {
   HeaderComponent,
   MenuComponent,
 } from "../../components";
-import { colors } from "../../constants/colors";
 import { Link } from "react-router-dom";
 import Header from "../../components/Layout/HeaderComponent/Header";
+import BreadcrumbComponent from "../../components/Layout/BreadcrumbComponent";
 
 const RegisterPage: React.FC = () => {
   const onFinish = (values: any) => {
@@ -21,7 +21,9 @@ const RegisterPage: React.FC = () => {
   return (
     <div>
       <Header />
-
+      <div className="container mx-auto mt-4">
+        <BreadcrumbComponent />
+      </div>
       <div className="flex justify-center mt-10">
         <div className="w-full max-w-6xl">
           <div className="text-center mb-5">
@@ -30,7 +32,7 @@ const RegisterPage: React.FC = () => {
             </h2>
             <p className="text-gray-600">
               Bạn đã có tài khoản?{" "}
-              <Link to="/login" className="text-sm text-primary ">
+              <Link to="/đăng-nhập" className="text-sm text-primary ">
                 Đăng nhập
               </Link>
             </p>
@@ -129,6 +131,9 @@ const RegisterPage: React.FC = () => {
                 </Form.Item>
 
                 <Form.Item>
+                  <h4 className=" flex mb-3 justify-center items-center">
+                    Hoặc
+                  </h4>
                   <Button
                     icon={<GoogleOutlined />}
                     type="default"

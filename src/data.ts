@@ -5,12 +5,31 @@ export const jobList = [
     id: 1,
     Title: "Gia sư ngắn hạn",
     Description:
-      "Bạn có thể dạy kèm một số môn học, ngoại ngữ hoặc kỹ năng nhất định trong vài buổi hoặc trong thời gian ngắn, tùy thuộc vào nhu cầu của học viên.",
+      "Bạn có thể dạy kèm một số môn học, ngoại ngữ hoặc kỹ năng nhất định trong vài buổi hoặc trong thời gian ngắn.",
     PostedBy: "Nguyễn Thị Trang",
     Salary: 500.0,
     ImageUrl: "/assets/images/giasu_congviec.jpg",
+    detailedDescription: `
+
+      - Dạy kèm các môn học hoặc ngoại ngữ, tư vấn cho học viên để đạt mục tiêu học tập
+       trong thời gian ngắn.
+      - Tương tác và theo dõi tiến độ học tập của học viên.
+
+## Yêu cầu công việc
+      - Có kinh nghiệm dạy kèm môn học hoặc ngoại ngữ.
+      - Kỹ năng giao tiếp tốt, kiên nhẫn với học viên.
+
+## Quyền lợi
+      - Lương thỏa thuận theo số buổi dạy.
+      - Thời gian linh hoạt.
+
+## Địa điểm làm việc
+      - TP.HCM
+    `,
+    location: "TP.HCM",
     isHot: true,
   },
+
   {
     id: 2,
     Title: "Thợ sửa điện",
@@ -19,6 +38,24 @@ export const jobList = [
     PostedBy: "Nguyễn Đình Phúc",
     Salary: 400.0,
     ImageUrl: "/assets/images/suadien_congviec.jpg",
+    detailedDescription: `
+
+    - Dạy kèm các môn học hoặc ngoại ngữ, tư vấn cho học viên để đạt mục tiêu học tập
+     trong thời gian ngắn.
+    - Tương tác và theo dõi tiến độ học tập của học viên.
+
+## Yêu cầu công việc
+    - Có kinh nghiệm dạy kèm môn học hoặc ngoại ngữ.
+    - Kỹ năng giao tiếp tốt, kiên nhẫn với học viên.
+
+## Quyền lợi
+    - Lương thỏa thuận theo số buổi dạy.
+    - Thời gian linh hoạt.
+
+## Địa điểm làm việc
+    - TP.HCM
+  `,
+    location: "Đà Nẵng",
     isHot: true,
   },
   {
@@ -29,6 +66,24 @@ export const jobList = [
     PostedBy: "Nguyễn Gia Công",
     Salary: 200.0,
     ImageUrl: "/assets/images/doncay.png",
+    detailedDescription: `
+
+    - Dạy kèm các môn học hoặc ngoại ngữ, tư vấn cho học viên để đạt mục tiêu học tập
+     trong thời gian ngắn.
+    - Tương tác và theo dõi tiến độ học tập của học viên.
+
+## Yêu cầu công việc
+    - Có kinh nghiệm dạy kèm môn học hoặc ngoại ngữ.
+    - Kỹ năng giao tiếp tốt, kiên nhẫn với học viên.
+
+## Quyền lợi
+    - Lương thỏa thuận theo số buổi dạy.
+    - Thời gian linh hoạt.
+
+## Địa điểm làm việc
+    - TP.HCM
+  `,
+    location: "Đà Nẵng",
     isHot: true,
   },
   {
@@ -39,6 +94,24 @@ export const jobList = [
     PostedBy: "Lưu Quang Vinh",
     Salary: 400.0,
     ImageUrl: "/assets/images/suanuoc_congviec.jpg",
+    location: "Đà Nẵng",
+    detailedDescription: `
+
+    - Dạy kèm các môn học hoặc ngoại ngữ, tư vấn cho học viên để đạt mục tiêu học tập
+     trong thời gian ngắn.
+    - Tương tác và theo dõi tiến độ học tập của học viên.
+
+## Yêu cầu công việc
+    - Có kinh nghiệm dạy kèm môn học hoặc ngoại ngữ.
+    - Kỹ năng giao tiếp tốt, kiên nhẫn với học viên.
+
+## Quyền lợi
+    - Lương thỏa thuận theo số buổi dạy.
+    - Thời gian linh hoạt.
+
+## Địa điểm làm việc
+    - TP.HCM
+  `,
     isHot: true,
   },
   {
@@ -49,6 +122,24 @@ export const jobList = [
     PostedBy: "Đinh Thị Cẩm Nhung",
     Salary: 200.0,
     ImageUrl: "/assets/images/nhanvienbanhang_congviec.jpg",
+    location: "Đà Nẵng",
+    detailedDescription: `
+
+    - Dạy kèm các môn học hoặc ngoại ngữ, tư vấn cho học viên để đạt mục tiêu học tập
+     trong thời gian ngắn.
+    - Tương tác và theo dõi tiến độ học tập của học viên.
+
+## Yêu cầu công việc
+    - Có kinh nghiệm dạy kèm môn học hoặc ngoại ngữ.
+    - Kỹ năng giao tiếp tốt, kiên nhẫn với học viên.
+
+## Quyền lợi
+    - Lương thỏa thuận theo số buổi dạy.
+    - Thời gian linh hoạt.
+
+## Địa điểm làm việc
+    - TP.HCM
+  `,
     isHot: true,
   },
   {
@@ -59,6 +150,7 @@ export const jobList = [
     PostedBy: "Trang Lê",
     Salary: 80.0,
     ImageUrl: "/assets/images/nhanviendonggoi_congviec.jpg",
+    location: "Đà Nẵng",
     isHot: true,
   },
   {
@@ -69,6 +161,7 @@ export const jobList = [
     PostedBy: "Phúc Nguyên Đỗ",
     Salary: 230.0,
     ImageUrl: "/assets/images/nhanvienphucvuEvent_congviec.jpg",
+    location: "Đà Nẵng",
     isHot: true,
   },
   {
@@ -79,6 +172,7 @@ export const jobList = [
     PostedBy: "Hoàng Gia Huy",
     Salary: 280.0,
     ImageUrl: "/assets/images/suamaygiat_congviec.jpg",
+    location: "Đà Nẵng",
     isHot: true,
   },
   {
@@ -89,6 +183,7 @@ export const jobList = [
     PostedBy: "Nguyễn Quang vinh",
     Salary: 400.0,
     ImageUrl: "/assets/images/suadien2_congviec.jpg",
+    location: "Đà Nẵng",
     isHot: true,
   },
   {
@@ -99,6 +194,7 @@ export const jobList = [
     PostedBy: "Đào Duy Từ",
     Salary: 400.0,
     ImageUrl: "/assets/images/suadien3_congviec.jpg",
+    location: "Đà Nẵng",
     isHot: true,
   },
   {
@@ -109,6 +205,7 @@ export const jobList = [
     PostedBy: "Nguyễn Vĩnh Khang",
     Salary: 400.0,
     ImageUrl: "/assets/images/suadien4_congviec.jpg",
+    location: "Đà Nẵng",
     isHot: true,
   },
   {
@@ -119,6 +216,7 @@ export const jobList = [
     PostedBy: "Lê Đình Cường",
     Salary: 400.0,
     ImageUrl: "/assets/images/suadien5_congviec.jpg",
+    location: "Đà Nẵng",
     isHot: true,
   },
 ];
@@ -210,5 +308,64 @@ export const similarJobs = [
     salary: 500000,
     imageUrl: "/Assets/images/donnha.png",
     isHot: true,
+  },
+];
+
+export const keywords = [
+  "Tìm việc làm",
+  "Tuyển dụng",
+  "Thần số học",
+  "Cv xin việc",
+  "Mẫu cv",
+  "Việc làm bắc giang",
+  "Việc làm hưng yên",
+  "Việc làm huế",
+  "Việc làm thái bình",
+  "Việc làm ninh bình",
+  "Việc làm hà tĩnh",
+  "Việc làm tphcm",
+  "Việc làm đà nẵng",
+  "Việc làm hải phòng",
+  "Việc làm cần thơ",
+  "Việc làm bình dương",
+  "Tìm việc làm tại hà nội",
+  "Việc làm nhân viên kinh doanh",
+  "Tuyển dụng kế toán trưởng",
+  "Việc làm sales",
+  "Tuyển dụng marketing",
+  "Tuyển dụng content marketing",
+  "Tuyển dụng nhân sự",
+  "Tuyển dụng kế toán tổng hợp",
+  "Tuyển dụng kiểm toán",
+  "Việc làm qa qc",
+  "Tuyển dụng brand marketing",
+  "Tuyển dụng hr manager",
+  "Việc làm ngành may",
+  "Tuyển dụng marketing manager",
+  "Việc làm giáo dục",
+  "Việc làm partime",
+  "Tuyển dụng tài chính",
+  "Việc làm tự động hóa",
+  "Việc làm báo chí",
+  "Tuyển dụng kiểm toán ngân hàng",
+  "Việc làm in ấn",
+  "Data analyst",
+];
+
+export const notifications = [
+  {
+    title: "Có công việc làm vườn gấp trong ngày mới đăng tải",
+    time: "10 phút trước",
+    read: false,
+  },
+  {
+    title: "Có công việc sửa laptop trong ngày mới đăng tải",
+    time: "1 tiếng trước",
+    read: true,
+  },
+  {
+    title: "Có công việc gia sư cấp 1 vừa mới đăng tải",
+    time: "1 phút trước",
+    read: false,
   },
 ];

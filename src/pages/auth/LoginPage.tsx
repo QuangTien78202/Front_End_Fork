@@ -1,24 +1,20 @@
 import React, { useState } from "react";
-import { Form, Input, Button, Checkbox, Row, Col } from "antd";
+import { Form, Input, Button, Checkbox } from "antd";
 import { GoogleOutlined } from "@ant-design/icons";
 import {
-  TopHeader,
   AdvsComponent,
   BenefitComponent,
   FooterComponent,
-  HeaderComponent,
-  MenuComponent,
 } from "../../components";
-import { colors } from "../../constants/colors";
 import { Link } from "react-router-dom";
 import Header from "../../components/Layout/HeaderComponent/Header";
+import BreadcrumbComponent from "../../components/Layout/BreadcrumbComponent";
 
 const LoginPage: React.FC = () => {
   const [loginError, setLoginError] = useState<string | null>(null);
 
   const onFinish = async (values: { username: string; password: string }) => {
     try {
-      // Gọi hàm login để gửi yêu cầu đăng nhập
       const user = await LoginPage(values.username, values.password);
       if (user) {
         console.log("Đăng nhập thành công", user);
@@ -31,21 +27,24 @@ const LoginPage: React.FC = () => {
       console.error("Error during login:", error);
     }
   };
-  return (
-    <div>
-      <Header />
 
-      <section className=" flex items-center justify-center py-7 ">
+  return (
+    <div className="min-h-screen flex flex-col justify-between">
+      <Header />
+      <div className="container mx-auto mt-4">
+        <BreadcrumbComponent />
+      </div>
+      <section className="flex items-center justify-center flex-grow mt-5">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
             {/* Login Form */}
-            <div className="bg-white shadow-lg p-6 rounded-lg">
+            <div className="bg-white shadow-lg p-6 rounded-lg max-w-md w-full">
               <h2 className="text-2xl font-bold mb-4 text-gray-700">
                 Đăng nhập
               </h2>
               <p className="mb-6 text-gray-500">
                 Bạn chưa có tài khoản?{" "}
-                <Link to="/sign-up" className="text-sm text-primary">
+                <Link to="/đăng-ký" className="text-sm text-primary">
                   Đăng ký ngay{" "}
                 </Link>
               </p>
@@ -81,18 +80,12 @@ const LoginPage: React.FC = () => {
                   />
                 </Form.Item>
 
-                <Form.Item>
-                  <Button icon={<GoogleOutlined />} size="large" block>
-                    Continue with Google
-                  </Button>
-                </Form.Item>
-
                 <div className="flex justify-between items-center">
                   <Form.Item name="remember" valuePropName="checked" noStyle>
                     <Checkbox>Lưu đăng nhập</Checkbox>
                   </Form.Item>
 
-                  <Link to="/forgot-password" className="text-sm text-primary">
+                  <Link to="/quên-mật-khẩu" className="text-sm text-primary">
                     Quên mật khẩu?
                   </Link>
                 </div>
@@ -110,12 +103,20 @@ const LoginPage: React.FC = () => {
                   >
                     Đăng nhập
                   </Button>
+                  <h4 className="flex pt-2 justify-center items-center">
+                    Hoặc
+                  </h4>
+                </Form.Item>
+                <Form.Item>
+                  <Button icon={<GoogleOutlined />} size="large" block>
+                    Continue with Google
+                  </Button>
                 </Form.Item>
               </Form>
             </div>
 
             {/* Login Image */}
-            <div className=" justify-center items-center md:flex hidden">
+            <div className="flex justify-center items-center">
               <img
                 src="/assets/images/logo_loginn.jpg"
                 alt="Login"
@@ -126,10 +127,11 @@ const LoginPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="hidden md:flex flex-col pt-5 ">
+      <section className="hidden md:flex flex-col pt-5">
         <BenefitComponent />
         <AdvsComponent />
       </section>
+
       <footer>
         <FooterComponent />
       </footer>

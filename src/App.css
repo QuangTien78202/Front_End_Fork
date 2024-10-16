@@ -58,51 +58,6 @@
   color: #16a870;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
-  margin-left: 15px;
-}
-
-.header-logo .logo-text {
-  font-size: 24px;
-  font-weight: bold;
-  color: #16a870;
-  font-family: "Courier New", Courier, monospace; /* Tùy chỉnh font chữ */
-}
-
-.header-search {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  margin: 0 20px;
-}
-
-.search-input {
-  width: 300px;
-  margin-left: 10px;
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-}
-
-.header-actions .login-button {
-  margin-left: 20px;
-  background-color: #16a870;
-  border-color: #16a870;
-}
-
-.header-actions .login-button:hover {
-  background-color: #138a64;
-  border-color: #138a64;
-}
-
 /* Responsive: Điều chỉnh kích thước văn bản và khoảng cách cho màn hình nhỏ */
 @media (max-width: 768px) {
   .benefit-card {

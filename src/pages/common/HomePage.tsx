@@ -1,13 +1,16 @@
 import React, { lazy, Suspense, useMemo } from "react";
 import { colors } from "../../constants/colors";
 
-import { categories, categoryList } from "../../data";
+import { categories, categoryList, keywords } from "../../data";
 import CarouselComponent from "../../components/Layout/CarouselComponent";
 import CategoryTitle from "../../components/Layout/CategoryTitle";
 import CategoryLinks from "../../components/Layout/CategoryLinks";
 import JobList from "../../components/Layout/JobList";
 import Header from "../../components/Layout/HeaderComponent/Header";
+import { KeywordList, SearchComponent } from "../../components/";
 import { Skeleton } from "antd";
+import PlantaholicBanner from "../../components/Layout/PlantaholicBanner";
+import NewsletterBanner from "../../components/Layout/NewsletterBanner";
 
 // Lazy load các component
 
@@ -44,7 +47,10 @@ const HomePage: React.FC = () => {
       <CarouselComponent images={carouselImages} />
 
       <div>
-        <div className="text-primary  px-5 bg-[#f5faf8] pb-5">
+        <div className=" mt-2 text-primary  px-5 bg-[#F3F5F7] pb-5">
+          <div className="flex justify-center">
+            <SearchComponent />
+          </div>
           <CategoryTitle title="Danh mục nổi bật" />
           <CategoryLinks links={memoizedCategoryList} />
 
@@ -70,12 +76,15 @@ const HomePage: React.FC = () => {
 
         {/* BenefitComponent với Skeleton */}
         <Suspense fallback={<Skeleton active paragraph={{ rows: 2 }} />}>
+          <PlantaholicBanner></PlantaholicBanner>
+          <NewsletterBanner />
           <BenefitComponent />
         </Suspense>
 
         {/* AdvsComponent với Skeleton */}
         <Suspense fallback={<Skeleton active paragraph={{ rows: 3 }} />}>
           <AdvsComponent />
+          <KeywordList keywords={keywords} />
         </Suspense>
       </div>
 

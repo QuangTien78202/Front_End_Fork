@@ -16,8 +16,8 @@ const MainRouter = () => {
           <Content>
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/job-details" element={<JobDetails />} />
-              <Route path="/job-details/:id" element={<JobDetails />} />
+              <Route path="/chi-tiết-công-việc" element={<JobDetails />} />
+              <Route path="/chi-tiết-công-việc/:id" element={<JobDetails />} />
             </Routes>
           </Content>
           <FooterComponent />

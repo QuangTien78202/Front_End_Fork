@@ -1,7 +1,11 @@
 // src/components/Layout/CardComponent/CardJob.tsx
 import React, { useState } from "react";
 import { Card, Button, Image } from "antd";
-import { HeartOutlined } from "@ant-design/icons";
+import {
+  DollarOutlined,
+  EnvironmentOutlined,
+  HeartOutlined,
+} from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 
 interface CardJobProps {
@@ -11,7 +15,9 @@ interface CardJobProps {
   PostedBy: string;
   Salary: number;
   ImageUrl: string;
+  location: string;
   isHot: boolean;
+  detailedDescription?: string;
   onClick?: () => void; // Thêm thuộc tính onClick để nhận sự kiện từ ngoài
 }
 
@@ -22,6 +28,8 @@ const CardJob: React.FC<CardJobProps> = ({
   PostedBy,
   Salary,
   ImageUrl,
+  location,
+  detailedDescription,
   isHot,
   onClick, // Nhận onClick từ props
 }) => {
@@ -35,7 +43,7 @@ const CardJob: React.FC<CardJobProps> = ({
   return (
     <Card
       hoverable
-      onClick={onClick ? onClick : () => navigate(`/job-details/${id}`)} // Nếu không có onClick từ ngoài thì điều hướng theo id
+      onClick={onClick ? onClick : () => navigate(`/chi-tiết-công-việc/${id}`)}
       cover={
         <Image
           alt={Title}
@@ -47,19 +55,28 @@ const CardJob: React.FC<CardJobProps> = ({
       className="rounded-lg m-5 flex flex-col justify-between min-h-[400px] overflow-hidden"
     >
       <div className="p-4 pr-2">
-        <h3 className="font-bold text-lg text-[#16A870]">{Title}</h3>
-        <p className="text-base mb-1">{Description}</p>
-        <p className="text-sm mb-1">
-          Được đăng bởi <strong className="text-[#16A870]">{PostedBy}</strong>
-        </p>
-        <p className="text-sm text-gray-600">
-          Lương:{" "}
-          <strong className="text-[#16A870]">
+        <h3 className="font-lato text-lg text-black line-clamp-1">{Title}</h3>
+        <p className="text-base mb-1 line-clamp-3">{Description}</p>{" "}
+        <button
+          className="text-gray-500 hover:text-primary"
+          onClick={() => navigate(`/chi-tiết-công-việc/${id}`)}
+        >
+          Xem chi tiết
+        </button>
+        <p className="text-sm mb-1">Được đăng bởi {PostedBy}</p>
+        <br />
+        <p className="text-sm text-gray-600 flex items-center">
+          <DollarOutlined className="mr-1" />
+          <strong className="text-thin">
             {new Intl.NumberFormat("vi-VN", {
               style: "currency",
               currency: "VND",
             }).format(Salary)}
           </strong>
+
+          <span className="ml-4 text-sm text-gray-600 flex items-center">
+            <EnvironmentOutlined className="mr-1" /> {location}
+          </span>
         </p>
       </div>
 

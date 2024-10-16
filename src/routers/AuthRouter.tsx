@@ -14,12 +14,12 @@ const AuthRouter = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/sign-up" element={<RegisterPage />} />
-          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-          <Route path="/job-details" element={<JobDetails />} />
+          <Route path="/đăng-nhập" element={<LoginPage />} />
+          <Route path="/đăng-ký" element={<RegisterPage />} />
+          <Route path="/quên-mật-khẩu" element={<ForgotPasswordPage />} />
+          <Route path="/chi-tiết-công-việc" element={<JobDetails />} />
           <Route path="/candidate-profile" element={<CandidateProfilePage />} />
-          <Route path="/job-details/:id" element={<JobDetails />} />
+          <Route path="/chi-tiết-công-việc/:id" element={<JobDetails />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>

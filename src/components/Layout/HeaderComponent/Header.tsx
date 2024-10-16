@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Affix } from "antd"; // Giả sử bạn đang sử dụng Ant Design
-import { TopHeader, HeaderComponent, MenuComponent } from "../../../components";
+import {
+  TopHeader,
+  HeaderComponent,
+  SearchComponent,
+} from "../../../components";
 
 const Header: React.FC = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState<boolean>(true);
@@ -37,9 +41,7 @@ const Header: React.FC = () => {
               <TopHeader />
             </div>
             <HeaderComponent />
-            <div className="hidden md:flex flex-col">
-              <MenuComponent />
-            </div>
+            <div className="hidden md:flex flex-col"></div>
           </>
         )}
       </header>

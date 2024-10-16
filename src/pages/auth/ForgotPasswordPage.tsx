@@ -3,6 +3,7 @@ import { Form, Input, Button, Row, Col, Segmented } from "antd";
 import { FooterComponent } from "../../components";
 import { Link } from "react-router-dom";
 import Header from "../../components/Layout/HeaderComponent/Header";
+import BreadcrumbComponent from "../../components/Layout/BreadcrumbComponent";
 
 const ForgotPasswordPage: React.FC = () => {
   const onFinish = (values: any) => {
@@ -12,7 +13,9 @@ const ForgotPasswordPage: React.FC = () => {
   return (
     <div>
       <Header />
-
+      <div className="container mx-auto mt-4">
+        <BreadcrumbComponent />
+      </div>
       <div className="flex flex-container justify-center mt-7">
         <div
           className="container"
@@ -62,7 +65,7 @@ const ForgotPasswordPage: React.FC = () => {
                   </Form.Item>
 
                   <Form.Item>
-                    <Link to="/login" className="text-sm text-primary">
+                    <Link to="/đăng-nhập" className="text-sm text-primary">
                       Quay lại trang đăng nhập
                     </Link>
                   </Form.Item>
