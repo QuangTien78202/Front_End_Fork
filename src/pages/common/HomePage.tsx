@@ -42,9 +42,8 @@ const HomePage: React.FC = () => {
     <div className="font-sans  bg-[#F3F5F7]">
       <Suspense fallback={<Skeleton active paragraph={{ rows: 1 }} />}>
         <Header />
+        <PlantaholicBanner />
       </Suspense>
-
-      <CarouselComponent images={carouselImages} />
 
       <div>
         <div className=" mt-2 text-primary  px-5 bg-[#F3F5F7] pb-5">
@@ -76,14 +75,12 @@ const HomePage: React.FC = () => {
 
         {/* BenefitComponent với Skeleton */}
         <Suspense fallback={<Skeleton active paragraph={{ rows: 2 }} />}>
-          <PlantaholicBanner></PlantaholicBanner>
-          <NewsletterBanner />
           <BenefitComponent />
         </Suspense>
 
         {/* AdvsComponent với Skeleton */}
         <Suspense fallback={<Skeleton active paragraph={{ rows: 3 }} />}>
-          <AdvsComponent />
+          <NewsletterBanner />
           <KeywordList keywords={keywords} />
         </Suspense>
       </div>

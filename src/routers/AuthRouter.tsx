@@ -6,7 +6,8 @@ import HomePage from "../pages/common/HomePage";
 import ForgotPasswordPage from "../pages/auth/ForgotPasswordPage";
 import JobDetails from "../pages/common/JobDetails/JobDetails";
 import Page404 from "../pages/common/404Page/404Page";
-import CandidateProfilePage from "../pages/Candidate/CandidateProfilePage/CandidateProfilePage";
+
+import PageProfileCandidate from "../pages/Candidate/CandidateProfilePage/PageProfileCandidate";
 
 const AuthRouter = () => {
   return (
@@ -18,8 +19,13 @@ const AuthRouter = () => {
           <Route path="/đăng-ký" element={<RegisterPage />} />
           <Route path="/quên-mật-khẩu" element={<ForgotPasswordPage />} />
           <Route path="/chi-tiết-công-việc" element={<JobDetails />} />
-          <Route path="/candidate-profile" element={<CandidateProfilePage />} />
+          <Route path="/candidate-profile" element={<PageProfileCandidate />} />
           <Route path="/chi-tiết-công-việc/:id" element={<JobDetails />} />
+          <Route path="/thong-tin-ca-nhan" element={<PageProfileCandidate />} />
+          {/* <Route path="/cac-cong-viec-da-goi" element={<CacCongViecDaGoi />} />
+            <Route path="/cong-viec-da-lam" element={<CongViecDaLam />} />
+            <Route path="/cv-cua-ban" element={<CvCuaBan />} />
+            <Route path="/chi-tieu" element={<ChiTieu />} /> */}
           <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>

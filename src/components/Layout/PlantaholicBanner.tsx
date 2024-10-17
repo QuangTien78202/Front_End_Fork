@@ -9,23 +9,23 @@ const PlantaholicBanner: React.FC = () => {
       role="main"
     >
       <div className="px-4 lg:px-16 text-center lg:text-left">
-        <p className="h-10">🪴 Plant-a-holic</p>
         <hr className="w-3/5 mx-auto lg:mx-0" />
         <h1
           className="mt-6 text-4xl lg:text-5xl font-headline tracking-tight font-extrabold text-gray-900 leading-snug"
           role="heading"
           aria-level={1}
         >
-          We got your plants. <br />
-          <span className="text-green-700" role="heading" aria-level={1}>
-            And we deliver them for you.
+          Cơ hội làm việc <br />
+          <span className="text-primary" role="heading" aria-level={1}>
+            part-time cho mọi người.
           </span>
         </h1>
         <p
           className="w-full lg:w-3/5 mt-2 text-gray-600 text-lg"
           aria-level={2}
         >
-          Tìm việc làm nhanh 24h, việc làm mới nhất trên toàn quốc.
+          Khám phá những công việc linh hoạt trên toàn quốc, đáp ứng thời gian
+          của bạn.
         </p>
         <div
           className="mt-8 flex justify-center lg:justify-start"
@@ -34,22 +34,22 @@ const PlantaholicBanner: React.FC = () => {
         >
           <Button
             type="primary"
-            className="bg-green-700 text-white px-8 py-3 rounded-md uppercase shadow hover:bg-green-800 hover:shadow-lg transform transition hover:-translate-y-1 focus:ring-2 focus:ring-green-600 ring-offset-2 outline-none"
+            className="bg-primary text-white px-8 py-3 rounded-md uppercase shadow hover:bg-green-800 hover:shadow-lg transform transition hover:-translate-y-1 focus:ring-2 focus:ring-green-600 ring-offset-2 outline-none"
           >
-            See the collection
+            Tìm việc ngay
           </Button>
           <Button
             type="default"
-            className="ml-4 bg-white text-green-700 px-8 py-3 rounded-md uppercase shadow hover:shadow-lg transform transition hover:-translate-y-1 focus:ring-2 focus:ring-green-600 ring-offset-2 outline-none"
+            className="ml-4 bg-white text-primary px-8 py-3 rounded-md uppercase shadow hover:shadow-lg transform transition hover:-translate-y-1 focus:ring-2 focus:ring-green-600 ring-offset-2 outline-none"
           >
-            Learn more
+            Tìm hiểu thêm
           </Button>
         </div>
       </div>
       <div className="mt-8 lg:mt-0 lg:ml-40 flex justify-center" role="img">
         <img
-          className="object-cover object-center w-64 lg:w-96 rounded-md hover:shadow-lg transform transition hover:-translate-y-2"
-          src="https://images.pexels.com/photos/3952029/pexels-photo-3952029.jpeg"
+          className="object-cover object-center w-64 lg:w-96 rounded-md "
+          src="/assets/images/banner_test.jpg"
           alt="Image of plants"
         />
       </div>

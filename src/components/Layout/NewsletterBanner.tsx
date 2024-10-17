@@ -1,56 +1,67 @@
 import React, { useState } from "react";
 import { Input, Button, Form } from "antd";
+import "tailwindcss/tailwind.css";
 
 const NewsletterBanner: React.FC = () => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = () => {
     console.log(`Email Submitted: ${email}`);
-    // Xử lý gửi email ở đây
   };
 
   return (
-    <div className="relative newsletter-inner p-6 bg-gray-100">
-      <div className="newsletter-content text-center">
-        <h2 className="mb-8 text-3xl font-bold">
-          Stay home & get your daily <br />
-          <span className="text-green-700">needs from our shop</span>
-        </h2>
-        <p className="mb-6 text-lg">
-          Start Your Daily Shopping with{" "}
-          <span className="text-brand text-green-700">Nest Mart</span>
-        </p>
-        <Form
-          className="form-subscriber flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4"
-          onFinish={handleSubmit}
+    <div
+      className="m-8 lg:m-16 flex flex-col lg:flex-row justify-between items-center"
+      role="main"
+    >
+      <div className="px-4 lg:px-16 text-center lg:text-left">
+        <hr className="w-3/5 mx-auto lg:mx-0" />
+        <h1
+          className="mt-6 text-4xl lg:text-5xl font-headline tracking-tight font-extrabold text-gray-900 leading-snug"
+          role="heading"
+          aria-level={1}
         >
-          <Form.Item
-            name="email"
-            rules={[{ required: true, message: "Please input your email!" }]}
-            className="w-full md:w-auto"
+          Khám phá cơ hội việc làm <br />
+          <span
+            className="text-primary tracking-wider  "
+            role="heading"
+            aria-level={1}
           >
-            <Input
-              type="email"
-              placeholder="Your email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="p-3 border rounded-md w-full md:w-auto"
-            />
-          </Form.Item>
+            part-time
+          </span>
+          hấp dẫn
+        </h1>
+        <p
+          className="w-full lg:w-3/5 mt-2 text-gray-600 text-lg"
+          aria-level={2}
+        >
+          Việc làm linh hoạt cho học sinh, sinh viên và người lao động tự do{" "}
+          <span className="font-bold text-clip text-primary">FINDJOB</span>
+        </p>
+        <div className="mt-8 flex justify-center lg:justify-start items-center w-full space-x-4">
+          <Input
+            type="email"
+            placeholder="Địa chỉ Email của bạn ..."
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="p-3 border rounded-md w-full max-w-md"
+          />
           <Button
-            type="primary"
-            htmlType="submit"
-            className="bg-green-700 text-white px-6 py-3 rounded-md hover:bg-green-800 transition"
+            size="large"
+            type="default"
+            className="bg-white text-primary px-8 py-3 rounded-md uppercase shadow hover:shadow-lg transform transition hover:-translate-y-1 focus:ring-2 focus:ring-green-600 ring-offset-2 outline-none"
           >
-            Subscribe
+            Tham gia ngay
           </Button>
-        </Form>
+        </div>
       </div>
-      <img
-        className="mt-8 mx-auto rounded-md w-full max-w-lg"
-        src="assets/images/banner.png"
-        alt="newsletter"
-      />
+      <div className="mt-8 lg:mt-0 lg:ml-40 flex justify-center" role="img">
+        <img
+          className="object-cover object-center w-80 lg:w-128 rounded-md hover:shadow-lg transform transition "
+          src="/assets/images/NewsletterBanner.jpg"
+          alt="Image of plants"
+        />
+      </div>
     </div>
   );
 };

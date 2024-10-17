@@ -10,6 +10,7 @@ import CardCategory from "../components/Layout/CardComponent/CardCategory";
 import SearchComponent from "../components/Layout/HeaderComponent/SearchComponent";
 import KeywordList from "../components/Layout/KeywordList";
 import NewsletterBanner from "../components/Layout/NewsletterBanner";
+import SidebarMenu from "../components/Candidate/SidebarMenu";
 
 export {
   CardJob,
@@ -24,4 +25,5 @@ export {
   KeywordList,
   SearchComponent,
   NewsletterBanner,
+  SidebarMenu,
 };

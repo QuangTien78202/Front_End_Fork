@@ -4,7 +4,7 @@ import React from "react";
 const AdvsComponent: React.FC = () => {
   return (
     <div className="my-4 w-full">
-      <div className="flex flex-col md:flex-row items-center bg-gray-100 rounded-3xl shadow p-6 space-y-6 md:space-y-0 md:space-x-6">
+      <div className="flex flex-col md:flex-row items-center bg-gray-100 p-6 space-y-6 md:space-y-0 md:space-x-6">
         {/* Text Section */}
         <div className="w-full text-left ml-5">
           <h4 className="text-xl font-bold">
